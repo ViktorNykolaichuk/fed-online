@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello</h1>
+    <ul>
+        <li> <a href="#">Link</a></li>
+    </ul>
+    <ul>
+        <li>
+            <h3>Hello</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, obcaecati?</p>
+        </li>
+        <li>Hello 1
+            <ol>
+                <li>Hello 1</li>
+                <li>Hello 2</li>
+                <li>Hello 3</li>
+            </ol>
+        </li>
+        <li>Hello 2</li>
+        <li>Hello 3</li>
+    </ul>
+    <ol reversed start="5" type="A">
+        <li>Hello 1</li>
+        <li>Hello 2</li>
+        <li>Hello 3</li>
+    </ol>
+    <ol type="I">
+        <li>Hello 1</li>
+        <li>Hello 2</li>
+        <li>Hello 3</li>
+    </ol>
+
+    <table border="4" style="width: 100%;">
+        <thead>
+            <tr>
+                <th colspan="2">Name / Second name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tom</td>
+                <td>Tomson</td>
+                <td rowspan="2">20</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Johnston</td>
+
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>Bobson</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="">
+        <p>
+            <label for="username">
+                Type username
+            </label>
+            <input placeholder="Type username" id="username" type="text">
+        </p>
+        <p>
+            <label for="Userpassword">
+                Type password
+            </label>
+            <input placeholder="Type password" id="Userpassword" type="password">
+        </p>
+
+        <fieldset>
+            <legend>User secret data</legend>
+            <p>
+                <label for="name">
+                    Type name
+                </label>
+                <input placeholder="Type name" id="name" type="text">
+            </p>
+            <p>
+                <label for="secondname">
+                    Type second name
+                </label>
+                <input placeholder="Type second name" id="secondname" type="password">
+            </p>
+            <p>
+                <label for="secretcode">
+                    Type secretcode
+                </label>
+                <input disabled placeholder="Type password" id="decretcode" type="password">
+            </p>
+        </fieldset>
+        <p>
+            <textarea disabled cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <label for="audi">
+                Audi
+            </label>
+            <input type="checkbox" id="audi" value="car audi">
+            <label for="subaru">
+                Subaru
+            </label>
+            <input type="checkbox" id="subaru" value="car ford">
+            <label for="Jaguar">
+                Jaguar
+            </label>
+            <input type="checkbox" id="Jaguar" value="car Jaguar">
+        </p>
+        <p>
+            <label for="male">
+                Male
+            </label>
+            <input type="radio" name="gender" value="male">
+            <label for="female">
+                Female
+            </label>
+            <input type="radio" name="gender" value="female">
+        </p>
+        <select>
+            <option value="front-end-skill-html">HTML</option>
+            <option value="front-end-skill-css">CSS</option>
+            <option value="front-end-skill-javascript">JavaScript</option>
+            <option value="back-end-skill-php">PHP</option>
+        </select>
+        <br><br><br>
+    </form>
+</body>
+
+</html>

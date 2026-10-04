@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <fieldset>
+        <legend>Submit button</legend>
+
+        <form action="">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" placeholder="Enter your name"><br><br>
+            <label for="lastname">Last name</label><br>
+            <input type="text" id="lastname" placeholder="Enter your last name"><br><br>
+            <!-- input types for homework (checkbox, radio, text, password was of the lesson)) -->
+            
+            <label for="color">Select your favorite color <strong>&#8594</strong></label>
+            <input type="color" id="favoritecolor" name="favoritecolor"><br><br>
+
+            <label for="date">Select your date of birth</label><br>
+            <input type="date" id="birthday" name="birthday" min="1900-01-01" max="2008-01-01"><br><br>
+
+            <label for="birthdaytime">Select your date and time of birth</label><br>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Enter your email"><br><br>
+            <input type="hidden" name="defaultemail" id="defaultemail" value="empty@empty.com"><br><br>
+
+            <label for="file">Select an avatar</label><br>
+            <input type="file" id="myfile" name="myfile">
+            <p>If it`s emply, we gonna put this one:</p>
+            <input type="image" src="https://mamp.one/wp-content/uploads/2024/09/image-resources2.jpg" width="40" height="40"><br><br>
+
+            <label for="month">Select your birth month</label><br>
+            <input type="month" id="birthmonth" name="birthmonth"><br>
+
+            <label for="number">Enter your favorite number</label><br>
+            <input type="number" placeholder="1-10" id="favnumber" name="favnumber" min="1" max="10"><br><br>
+
+            <label for="vol">Volume</label><br>
+            <input type="range" id="vol" name="vol" min="0" max="100"><br><br>
+
+            <label for="ssearch">Some search: </label>
+            <input type="search" id="ssearch" name="ssearch"><br><br>
+
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" placeholder="380000000000" id="phone" name="phone" pattern="[0-9]{12}"><br><br>
+
+            <label for="appt">Select a time:</label>
+            <input type="time" id="appt" name="appt"><br><br>
+
+            <label for="homepage">Add your homepage:</label>
+            <input type="url" placeholder="https://example.com" id="homepage" name="homepage"><br><br>
+
+            <label for="week">Select a week:</label>
+            <input type="week" id="week" name="week"><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <input type="button" value="Hint" onclick="alert('Please fill out all fields')"><br><br>
+            
+        </form>
+
+
+    </fieldset>
+</body>
+
+</html>
