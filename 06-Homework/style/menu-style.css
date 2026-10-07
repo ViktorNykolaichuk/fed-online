@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+.menu-text h2,
+.position-title,
+.burger-text,
+.burger-title,
+.burger-price {
+margin: 0;
+padding: 0;
+}
+
+body {
+    background-color: #f6f5f5da;
+}
+
+.container {
+    width: 360px;
+    margin: 100px auto;
+    border-radius: 20px;
+    background-color: #FFF;
+    padding: 56px 20px 91px 20px;
+}
+
+.menu-button {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    margin-left: 8px;
+    margin-bottom: 23px;
+}
+
+.menu-text {
+    margin-left: 2px;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+
+.food-search-input {
+    background-color: #EFEFEF;
+    width: 316px;
+    height: 44px;
+    margin-left: 4px;
+    border-radius: 12px;
+    padding-left: 19px;
+    margin-bottom: 29px;
+}
+
+.food-search-input input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+}
+
+.menu-items {
+    display: inline-block;
+    background-color: transparent;
+    width: 74px;
+    height: 101px;
+    margin-left: 4px;
+    margin-right: 20px;
+    margin-bottom: 32px;
+}
+
+.menu-position {
+    background-color: #EFEFEF;
+    width: 74px;
+    height: 74px;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 12px;
+}
+
+.position-image {
+    width: 100%;
+    height: 100%;
+}
+
+.position-title {
+    text-align: center;
+    color: #C4C4C4;
+}
+
+.menu-items:hover .menu-position {
+    background-color: #EAE2B7;
+}
+
+.menu-items:hover .position-title {
+    color: black;
+}
+
+.burger-title {
+    margin-left: 4px;
+    margin-bottom: 26px;
+}
+
+.burger-items {
+    width: 100%;
+}
+
+.burger-position {
+    width: 316px;
+    height: 88px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px #E5E5E5;
+    vertical-align: middle;
+    margin-left: 4px;
+    padding-top: 10px;
+}
+
+.burger-position img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 68.51351165771484px;
+    margin-left: 16px;
+}
+
+.burger-price {
+    vertical-align: middle;
+    font-size: 14px;
+    color: #D62828;
+}
+
+.burger-info {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 8px;
+    margin-left: 12px;
+}
+
+.burger-items:last-child {
+  margin-bottom: 0;
+}
