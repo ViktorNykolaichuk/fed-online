@@ -4,7 +4,7 @@
 
 .menu-text h2,
 .position-title,
-.burger-text,
+.burger-name,
 .burger-title,
 .burger-price {
 margin: 0;
@@ -124,6 +124,10 @@ body {
     margin-left: 16px;
 }
 
+.burger-name{
+    vertical-align: middle;
+    font-size: 16px;
+}
 .burger-price {
     vertical-align: middle;
     font-size: 14px;
@@ -133,7 +137,7 @@ body {
 .burger-info {
     display: inline-block;
     vertical-align: middle;
-    margin-top: 8px;
+    /* margin-top: 8px; */
     margin-left: 12px;
 }
 
