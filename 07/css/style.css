@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+/* .inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+ @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+ body{
+    font-family: 'inter', sans-serif;
+ }
+.container{
+    width: 400px;
+    margin: 100px auto;
+    background-color: lightcoral;
+    text-align: center;
+    padding: 50px;
+    font-weight: 600;
+}

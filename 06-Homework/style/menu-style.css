@@ -2,18 +2,13 @@
     box-sizing: border-box;
 }
 
-.menu-text h2,
-.position-title,
-.burger-name,
-.burger-title,
-.burger-price {
-margin: 0;
-padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body {
+    font-family: 'inter', sans-serif;
     background-color: #f6f5f5da;
 }
+
 
 .container {
     width: 360px;
@@ -38,6 +33,10 @@ body {
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 17px;
+    font-style: Semi Bold;
+    line-height: 100%;
+    letter-spacing: 0%;
+
 }
 
 .food-search-input {
@@ -56,7 +55,12 @@ body {
     outline: none;
     width: 100%;
     height: 100%;
+    font-weight: 400;
+    font-style: Regular;
     font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
 }
 
 .menu-items {
@@ -86,6 +90,12 @@ body {
 .position-title {
     text-align: center;
     color: #C4C4C4;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
 }
 
 .menu-items:hover .menu-position {
@@ -99,6 +109,12 @@ body {
 .burger-title {
     margin-left: 4px;
     margin-bottom: 26px;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
 }
 
 .burger-items {
@@ -124,15 +140,27 @@ body {
     margin-left: 16px;
 }
 
-.burger-name{
+.burger-name {
     vertical-align: middle;
-    font-size: 16px;
     margin-bottom: 8px;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
 }
+
 .burger-price {
     vertical-align: middle;
-    font-size: 14px;
     color: #D62828;
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
 }
 
 .burger-info {
@@ -142,5 +170,5 @@ body {
 }
 
 .burger-items:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
