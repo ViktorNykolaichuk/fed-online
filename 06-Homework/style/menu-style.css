@@ -108,7 +108,7 @@ body {
 .burger-position {
     width: 316px;
     height: 88px;
-    display: inline-block;
+
     border-radius: 10px;
     box-shadow: 0px 0px 4px 0px #E5E5E5;
     vertical-align: middle;
@@ -117,7 +117,7 @@ body {
 }
 
 .burger-position img {
-    display: inline-block;
+
     vertical-align: middle;
     width: 60px;
     height: 68.51351165771484px;
@@ -127,6 +127,7 @@ body {
 .burger-name{
     vertical-align: middle;
     font-size: 16px;
+    margin-bottom: 8px;
 }
 .burger-price {
     vertical-align: middle;
@@ -137,7 +138,6 @@ body {
 .burger-info {
     display: inline-block;
     vertical-align: middle;
-    /* margin-top: 8px; */
     margin-left: 12px;
 }
 
