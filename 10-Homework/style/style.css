@@ -173,6 +173,10 @@ body {
     margin-right: 0;
 }
 
+.developers>div:last-child {
+    margin-right: 0;
+}
+
 .skill img {
     display: block;
     margin: 10px auto;
