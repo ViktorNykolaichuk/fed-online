@@ -132,7 +132,7 @@ body {
     margin-bottom: 12px;
 }
 
-.burger-position:last-child {
+.burger-items:last-child .burger-position {
     margin-bottom: 0;
 }
 
