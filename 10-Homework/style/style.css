@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #00A1C60D;
+}
+
+.container {
+    width: fit-content;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.label {
+    width: 995px;
+    height: 80px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    letter-spacing: -0.5px;
+    margin-top: 142px;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+    span {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 80px;
+        letter-spacing: -0.5px;
+
+    }
+}
+
+.label-text {
+    width: 695px;
+    height: 80px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    margin-top: 10px;
+}
+
+.developers {
+    margin: 50px auto;
+}
+
+.developer1,
+.developer2,
+.developer3,
+.developer4 {
+    float: left;
+    width: 295px;
+    height: 470px;
+    border-radius: 20px;
+    border-color: #EAEDF2;
+    border-width: 1px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 0 #2D36400D;
+    margin-right: 20px;
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+
+}
+
+.developers::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.developers>div:last-child {
+    margin-right: 0;
+}
+
+.avatar-container {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    margin: 56px auto;
+    background-color: #EFF3F8;
+    border-radius: 50%;
+}
+
+.developer1,
+.developer2 {
+    .avatar-container img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.developer3 {
+    .avatar-container img {
+        display: block;
+        width: auto;
+        height: 100%;
+        margin-left: -20px;
+    }
+}
+
+.developer4 {
+    .avatar-container img {
+        display: block;
+        width: auto;
+        height: 100%;
+        margin-left: -30px;
+    }
+}
+
+.dev1-name,
+.dev2-name,
+.dev3-name,
+.dev4-name {
+    display: block;
+    width: auto;
+    height: 33px;
+    margin-top: 34px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -0.63px;
+    text-align: center;
+}
+
+.dev1-about,
+.dev2-about,
+.dev3-about,
+.dev4-about {
+    display: block;
+    width: auto;
+    height: 26px;
+    margin-top: -4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.skills {
+    text-align: center;
+    margin: 34px;
+}
+
+.skills::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.skill {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.skills>div:last-child {
+    margin-right: 0;
+}
+
+.skill img {
+    display: block;
+    margin: 10px auto;
+}
+
+.vue {
+    background-color: #41B883;
+}
+
+.angular {
+    background-color: #34474F;
+}
+
+.flutter {
+    background-color: #202124;
+}
+
+.reactJs {
+    background-color: #61DAFB;
+}
+
+.reactNative {
+    background-color: #0AA9D7;
+}
+
+.java {
+    background-color: #D63033;
+}
+
+.html {
+    background-color: #E44E25;
+}
+
+.css {
+    background-color: #1073BB;
+}
