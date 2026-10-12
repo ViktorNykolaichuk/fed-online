@@ -12,40 +12,11 @@ body {
     background: #d9d9d9;
 }
 
-.speechify-square {
-    width: 512px;
-    height: 512px;
-    background-color: #FFCE22;
+.content {
     position: relative;
-    z-index: 10;
-    margin: 500px auto;
-}
-
-.speechify-square-blue {
-    width: 512px;
-    height: 271.5px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 10;
-}
-
-.speechify-square-glyph {
-    background-color: transparent;
-    width: 400.0000782012976px;
-    height: 227.36173669835443px;
-    top: 144px;
-    left: 55px;
-    position: absolute;
-    z-index: 12;
-}
-
-.speechify-square-label {
-    position: absolute;
-    top: -25px;
-    left: 0px;
-    z-index: 12;
-    color: gray;
+    height: auto;
+    width: 1600px;
+    margin: 0 auto;
 }
 
 .diia-flag {
@@ -53,9 +24,9 @@ body {
     width: 512px;
     height: 512px;
     position: absolute;
-    bottom: 400px;
-    right: 440px;
-    z-index: -1;
+    top: 40px;
+    left: 0;
+    z-index: 8;
 }
 
 .diia-flag-vector {
@@ -86,6 +57,45 @@ body {
     color: gray;
 }
 
+.speechify-square {
+    width: 512px;
+    height: 512px;
+    background-color: #FFCE22;
+    position: absolute;
+    z-index: 10;
+    top: 440px;
+    left: 450px;
+}
+
+.speechify-square-blue {
+    width: 512px;
+    height: 271.5px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+.speechify-square-glyph {
+    background-color: transparent;
+    width: 400.0000782012976px;
+    height: 227.36173669835443px;
+    top: 144px;
+    left: 55px;
+    position: absolute;
+    z-index: 12;
+}
+
+.speechify-square-label {
+    position: absolute;
+    top: -25px;
+    left: 0px;
+    z-index: 12;
+    color: gray;
+}
+
+
+
 .speechify-circle {
     width: 512px;
     height: 512px;
@@ -96,8 +106,8 @@ body {
 
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     position: absolute;
-    bottom: 15px;
-    right: 750px;
+    left: 860px;
+    top: 860px;
     z-index: 9;
 }
 
@@ -133,8 +143,8 @@ body {
 
 .speechify-circle-label {
     position: absolute;
-    bottom: 537px;
-    right: 1147px;
+    top: 840px;
+    left: 860px;
     z-index: 15;
     color: gray;
     inherits: false;
