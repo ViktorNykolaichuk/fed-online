@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    background-color: #F2F2F2;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+main {
+    width: 1243px;
+    margin: 0 auto;
+    padding: 142px 0 128px;
+}
+
+h1>strong {
+    color: #2d3640;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+h1 {
+    color: #2d3640;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 80px;
+    letter-spacing: -0.5px;
+}
+
+.sub-title-text {
+    width: 695px;
+    color: #2d3640;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    margin-bottom: 50px;
+}
+
+.user-card {
+    padding: 58px 0 122px;
+    width: 295px;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.card-row .user-card:last-child {
+    margin-right: 0;
+}
+
+.user-photo {
+    width: 114px;
+    height: 114px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 3px solid #EFF3F8;
+}
+
+.user-photo img{
+    width: 114px;
+    height: 114px;
+}
+
+.user-card h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -0.63px;
+    text-align: center;
+    margin: 34px 0 4px;
+}
+
+.user-card p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    margin-bottom: 33px;
+}
+
+.skills {
+    text-align: center;
+    font-size: 0;
+}
+
+.skill-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px 0 0 0;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.skills .skill-item:last-child {
+    margin-right: 0;
+}
+
+.skill-item img {
+    width: 25px;
+}
+
+.vue {
+    padding: 15px 0 0 0;
+    background-color: #41B883;
+}
+
+.ang {
+    padding: 12px 0 0 0;
+    background-color: #34474F;
+}
+
+.flut {
+    padding: 10px 0 0 0;
+    background-color: #202124;
+}
+
+.reactJS {
+    padding: 12px 0 0 0;
+    background-color: #61DAFB;
+}
+
+.java {
+    padding: 5px 0 0 0;
+    background-color: #D63033;
+}
+
+.reactNat {
+    padding: 11px 0 0 0;
+    background-color: #0AA9D7;
+}
+
+.html {
+    padding: 7px 0 0 0;
+    background-color: #E44E25;
+}
+
+.css {
+    padding: 7px 0 0 0;
+    background-color: #1073BB;
+}
