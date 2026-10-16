@@ -15,7 +15,8 @@ body {
 }
 
 main {
-    width: 1243px;
+    /* width: 1243px; */
+    width: 49%;
     margin: 0 auto;
     padding: 142px 0 128px;
 }
@@ -35,7 +36,8 @@ h1 {
 }
 
 .sub-title-text {
-    width: 695px;
+    /* width: 695px; */
+    max-width: 695px;
     color: #2d3640;
     font-weight: 400;
     font-size: 20px;
@@ -46,12 +48,15 @@ h1 {
 
 .user-card {
     padding: 58px 0 122px;
-    width: 295px;
+    /* width: 295px; */
+    width: 23%;
+    min-width: 200px;
     background-color: #fff;
     border-radius: 20px;
     text-align: center;
     float: left;
     margin-right: 20px;
+    margin-bottom: 20px;
     overflow: hidden;
 }
 
@@ -60,8 +65,10 @@ h1 {
 }
 
 .user-photo {
-    width: 114px;
-    height: 114px;
+    /* width: 114px;
+    height: 114px; */
+    max-width: 114px;
+    max-height: 114px;
     border-radius: 100%;
     overflow: hidden;
     margin: 0 auto;
@@ -69,8 +76,10 @@ h1 {
 }
 
 .user-photo img{
-    width: 114px;
-    height: 114px;
+    /* width: 114px;
+    height: 114px; */
+    width: 100%;
+    height: auto;
 }
 
 .user-card h4 {
@@ -101,7 +110,8 @@ h1 {
     border-radius: 100%;
     overflow: hidden;
     text-align: center;
-    padding: 10px 0 0 0;
+    /* padding: 10px 0 0 0; */
+    padding: 10px;
     display: inline-block;
     margin-right: 15px;
 }
@@ -111,45 +121,54 @@ h1 {
 }
 
 .skill-item img {
-    width: 25px;
+    /* width: 25px; */
+    width: 100%;
 }
 
 .vue {
-    padding: 15px 0 0 0;
+    /* padding: 15px 0 0 0; */
+    padding: 10px;
     background-color: #41B883;
 }
 
 .ang {
-    padding: 12px 0 0 0;
+    /* padding: 12px 0 0 0; */
+    padding: 12px;
     background-color: #34474F;
 }
 
 .flut {
-    padding: 10px 0 0 0;
+    /* padding: 10px 0 0 0; */
+    padding: 10px;
     background-color: #202124;
 }
 
 .reactJS {
-    padding: 12px 0 0 0;
+    /* padding: 12px 0 0 0; */
+    padding: 12px;
     background-color: #61DAFB;
 }
 
 .java {
-    padding: 5px 0 0 0;
+    /* padding: 5px 0 0 0; */
+    padding: 5px;
     background-color: #D63033;
 }
 
 .reactNat {
-    padding: 11px 0 0 0;
+    /* padding: 11px 0 0 0; */
+    padding: 11px;
     background-color: #0AA9D7;
 }
 
 .html {
-    padding: 7px 0 0 0;
+    /* padding: 7px 0 0 0; */
+    padding: 7px;
     background-color: #E44E25;
 }
 
 .css {
-    padding: 7px 0 0 0;
+    /* padding: 7px 0 0 0; */
+    padding: 7px;
     background-color: #1073BB;
 }
