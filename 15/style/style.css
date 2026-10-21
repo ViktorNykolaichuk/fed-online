@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: yellow;
+}
+
+.bg-image{
+    width: 1510px;
+    /* height: 1510px; нічого доброго так не вийде */
+    min-height: 500px;
+    background-image: url(../img/avatar.png), url(../img/1.webp);
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* background-position: top 200px left 500px; */
+    /* background-position: top right; */
+    background-position: center center;
+    /* background-size: contain; */
+    /* background-size: cover; */
+    background-size: 100px 100px;
+}
+
+.bg-image:hover {
+background-color: blue;
+}
+
+p{
+    width: 300px;
+    margin: 0 auto;
+}
+
+input{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    background-image: url(../img/Vector.svg);
+    background-size: 16px 16px;
+    background-position: center right;
+    background-repeat: no-repeat;
+    
+}
