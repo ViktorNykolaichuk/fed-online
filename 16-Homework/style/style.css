@@ -111,7 +111,6 @@ header {
 }
 
 .cinema-genre {
-    width: 28%;
     font-weight: 500;
     font-size: 32px;
     line-height: 100%;
@@ -134,7 +133,6 @@ header {
 }
 
 .cinema-name {
-    width: 34%;
     font-weight: 800;
     font-size: 64px;
     line-height: 100%;
@@ -151,7 +149,7 @@ header {
     font-size: 29px;
     line-height: 100%;
     letter-spacing: 0%;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 }
 
 .cinema-author div {
@@ -170,7 +168,7 @@ header {
 }
 
 .cinema-description {
-    width: 40%;
+    width: 50%;
     font-weight: 400;
     font-size: 24px;
     line-height: 142%;
@@ -181,15 +179,11 @@ header {
 /* Graphics */
 
 .cinema-raiting {
-    width: 10%;
+    width: 13%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 1%;
-}
-
-.cinema-raiting i {
-    width: 28px;
-    height: 27px;
+    font-size: 28px;
 }
 
 .cinema-raiting .fa-solid {
@@ -197,7 +191,7 @@ header {
 }
 
 .cinema-actions {
-    width: 28%;
+    width: 38%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -262,11 +256,11 @@ header {
 
 .popular,
 .popular-header {
-    width: 45%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    width: 55%;
+    justify-content: space-between;
 }
 
 .popular {
@@ -295,6 +289,7 @@ header {
 }
 
 .cinema {
+    min-width: 151px;
     width: 151px;
     height: 210px;
     border: 1px solid #FFFFFF;
@@ -318,9 +313,9 @@ header {
 }
 
 .age-banner h2 {
-    margin: 15px 26px;
+    align-self: center;
+    margin-left: 20%;
     font-weight: 500;
-    font-style: Medium;
     font-size: 24px;
     line-height: 142%;
     letter-spacing: 0%;
