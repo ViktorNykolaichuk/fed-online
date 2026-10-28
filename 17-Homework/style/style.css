@@ -77,8 +77,8 @@ header a img {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
+
 
 .shoe-image img {
     display: block;
@@ -126,7 +126,7 @@ header a img {
     position: relative;
     display: block;
     width: 100%;
-    max-width: 342px;
+    /* max-width: 342px; */
     margin-bottom: 25px;
 }
 
@@ -315,7 +315,7 @@ header a img {
     background-color: #000000;
 }
 
-@media (max-width: 1511px) {
+@media (max-width: 1299px) {
 
     .desktop,
     .new-shoes.desktop,
@@ -323,39 +323,34 @@ header a img {
         display: none;
     }
 
-    .shoe-image {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 0 auto;
-        height: 354px;
+      .shoe-image.mobile {
+        position: relative;
         width: calc(100% + 48px);
-
-        margin: 0 -24px;
+        aspect-ratio: 390 / 354;
+        height: auto;
+        margin: 0 -24px 27px;
         overflow: hidden;
-        margin-bottom: 27px;
     }
 
-    .shoe-image>.right {
-        flex-shrink: 0;
+    .shoe-image.mobile .right {
+        position: absolute;
+        width: 55.64%;
+        height: 72.88%;
         top: 0;
-        left: -22px;
-        width: 217px;
-        height: 258px;
+        left: -5.64%;
         transform: rotate(-2.74deg);
     }
 
-    .shoe-image>.left {
-        flex-shrink: 0;
-        margin-top: 65px;
-        left: 175px;
-        width: 242px;
-        height: 289px;
+    .shoe-image.mobile .left {
+        position: absolute;
+        width: 62.05%;
+        height: 81.64%;
+        top: 18.36%;
+        left: 44.87%;
         transform: rotate(-7.16deg);
     }
 }
-
-@media (min-width: 1512px) {
+@media (min-width: 1300px) {
 
     .mobile,
     .new-shoes.mobile,
@@ -387,59 +382,59 @@ header a img {
         gap: 46px;
     }
 
-    .top {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 auto;
-        height: 530px;
-        padding-right: 30px;
-        margin-bottom: 82px;
-        width: 1464px;
-    }
+   .top {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 530px;
+    margin-bottom: 82px;
+    gap: 30px;
+}
 
-    .shoe-image {
-        display: block;
-        position: relative;
-        flex: 0 0 1000px;
-        width: 1000px;
-        height: 520px;
-        margin: 0;
-        /* overflow: hidden; */
-    }
+    .shoe-image.desktop {
+    position: relative;
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
+    aspect-ratio: 1000 / 520;
+    height: auto;
+    margin: 0;
+}
 
-    .shoe-image .right {
-        position: absolute;
-        transform: rotate(5.89deg);
-        width: 600px;
-        height: 429px;
-        left: 0;
-        bottom: 0;
-    }
+    .shoe-image.desktop .right {
+    position: absolute;
+    width: 60%;
+    height: 82.5%;
+    left: 0;
+    bottom: 0;
+    transform: rotate(5.89deg);
+}
 
-    .shoe-image .left {
-        position: absolute;
-        transform: rotate(8.48deg);
-        width: 382px;
-        height: 342px;
-        right: 0;
-        top: 0;
-    }
+.shoe-image.desktop .left {
+    position: absolute;
+    width: 38.2%;
+    height: 65.77%;
+    right: 0;
+    top: 0;
+    transform: rotate(8.48deg);
+}
 
-    .text-content {
-        width: 250px;
-        align-self: flex-end;
-    }
+.text-content {
+    flex: 0 0 250px;
+    align-self: center;
+    align-items: flex-start;
+}
 
-    .text-content h1,
-    .text-content p {
-        text-align: start;
-    }
+.text-content h1,
+.text-content p {
+    text-align: left;
+}
 
-    .text-content a{
-        align-self: flex-start;
-    }
+.text-content a {
+    align-self: flex-start;
+}
 
     .new-shoes {
         gap: 35px;
@@ -455,16 +450,25 @@ header a img {
         gap: 16px;
         justify-content: center;
         margin-bottom: 17px;
+        width: 100%;
     }
 
     .categories a {
         display: flex;
         align-items: center;
         width: 100%;
-        max-width: 724px;
-        max-height: 454px;
-        overflow: hidden;
+        max-width: none;
+        /* max-height: 454px;    */
+        /* overflow: hidden; */
+        aspect-ratio: 724 / 454;
     }
+
+    .categories a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
     .women-shoes p {
         right: 45px;
         bottom: 30px;
