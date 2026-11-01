@@ -1,0 +1,509 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+$font-main: 'Montserrat', sans-serif;
+$font-secondary: 'Poppins', sans-serif;
+
+$color-black: #000000;
+$color-white: #FFFFFF;
+$color-gray: #C4C4C4;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin font-style-18px-500 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+
+body {
+    background-color: $color-white;
+    font-family: $font-main;
+    font-size: 18px;
+}
+
+.container {
+    margin: 0 24px;
+}
+
+header .container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 34px 31px 32px 27px;
+
+    a {
+        font-family: $font-secondary;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0%;
+        text-align: center;
+        color: $color-black;
+        text-decoration: none;
+    }
+
+    .shoppy {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        @mixin flex-center;
+        width: 163px;
+        height: 42px;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 60px;
+        letter-spacing: -5%;
+        text-decoration: none;
+        color: $color-white;
+        background-color: $color-black;
+    }
+}
+
+
+header a img {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.content>.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top,
+.text-content,
+.categories {
+    @include flex-column-center;
+}
+
+.shoe-image img {
+    display: block;
+    max-width: none;
+}
+
+.text-block h1 {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -5%;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.text-block p {
+    font-family: $font-secondary;
+    @include font-style-18px-500;
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.shop-now {
+    @include flex-center;
+    width: 195px;
+    height: 50px;
+    background-color: $color-black;
+    border-radius: 15px;
+    font-family: $font-secondary;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: $color-white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.categories a {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.categories a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.categories>a h2 {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    color: $color-white;
+}
+
+.women-shoes p {
+    position: absolute;
+    font-family: $font-secondary;
+    @include font-style-18px-500;
+    bottom: 13px;
+    right: 10px;
+    color: $color-black;
+}
+
+.man-shoes p {
+    position: absolute;
+    font-family: $font-secondary;
+    @include font-style-18px-500;
+    left: 20px;
+    bottom: 14px;
+    color: $color-white;
+}
+
+.recomendations {
+    position: relative;
+    margin-top: 20px;
+    color: $color-black;
+
+    h2 {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 0%;
+        justify-self: start;
+        margin-bottom: 10px;
+    }
+}
+
+.new-shoes {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: 30px;
+
+    img {
+        margin-bottom: 3px;
+        width: 252px;
+        height: 252px;
+    }
+}
+
+
+.new-shoes>.shoe {
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+
+    a {
+        font-family: $font-secondary;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0%;
+        text-decoration: none;
+        color: $color-black;
+        margin-bottom: 4px;
+    }
+}
+
+
+.bottom-part {
+    @include flex-column-center;
+    justify-content: center;
+    margin-top: 55px;
+    margin-bottom: 85px;
+    font-family: $font-secondary;
+    @include font-style-18px-500;
+    text-align: center;
+
+    h2 {
+        font-family: $font-main;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin-bottom: 22px;
+    }
+
+    a {
+        @include flex-center;
+        text-decoration: none;
+        width: 235px;
+        height: 55px;
+        background-color: transparent;
+        border: 2px solid $color-black;
+        color: $color-black;
+    }
+}
+
+.footer {
+    font-family: $font-secondary;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    background-color: $color-black;
+    padding: 47px 24px 0;
+}
+
+.footer-block>.information {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        color: $color-gray;
+        margin-bottom: 6px;
+        text-transform: uppercase;
+    }
+
+    a {
+        color: $color-white;
+        text-decoration: none;
+        margin-bottom: 3px;
+    }
+}
+
+
+.footer-block {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 29px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.information>.social {
+    display: flex;
+    gap: 13px;
+
+    a img {
+        width: 25px;
+        height: 25px;
+        border: 1px solid $color-black;
+    }
+}
+
+.about {
+    font-family: $font-secondary;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 25px;
+    color: $color-gray;
+    text-align: center;
+    padding-bottom: 12px;
+    background-color: $color-black;
+}
+
+@media (max-width: 1299px) {
+
+    .desktop,
+    .new-shoes.desktop,
+    .shoe-image.desktop {
+        display: none;
+    }
+
+    .shoe-image.mobile {
+        position: relative;
+        width: calc(100% + 48px);
+        aspect-ratio: 390 / 354;
+        height: auto;
+        margin: 0 -24px 37px;
+        overflow: hidden;
+
+        .right {
+            position: absolute;
+            width: 55.64%;
+            height: 72.88%;
+            top: 0;
+            left: -5.64%;
+            transform: rotate(-2.74deg);
+        }
+
+        .left {
+            position: absolute;
+            width: 62.05%;
+            height: 81.64%;
+            top: 18.36%;
+            left: 44.87%;
+            transform: rotate(-7.16deg);
+        }
+    }
+
+}
+
+@media (min-width: 1300px) {
+
+    .mobile,
+    .new-shoes.mobile,
+    .shoe-image.mobile {
+        display: none;
+    }
+
+    header .desktop {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+    }
+
+    header .desktop a {
+        @include flex-center;
+        width: auto;
+        height: 42px;
+        padding: 0 6px;
+
+        &:hover {
+            background-color: $color-black;
+            color: $color-white;
+        }
+    }
+
+    header .actions {
+        gap: 46px;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 530px;
+        margin-bottom: 82px;
+        gap: 30px;
+    }
+
+    .shoe-image.desktop {
+        position: relative;
+        flex: 1 1 0;
+        min-width: 0;
+        width: auto;
+        aspect-ratio: 1000 / 520;
+        height: auto;
+        margin: 0 3% 0 3%;
+
+        .right {
+            position: absolute;
+            width: 60%;
+            height: 82.5%;
+            left: 0;
+            bottom: 0;
+            transform: rotate(5.89deg);
+        }
+
+        .left {
+            position: absolute;
+            width: 38.2%;
+            height: 65.77%;
+            right: 0;
+            top: 0;
+            transform: rotate(8.48deg);
+        }
+    }
+
+    .text-content {
+        flex: 0 0 250px;
+        align-self: center;
+        align-items: flex-start;
+
+        h1,
+        p {
+            text-align: left;
+        }
+
+        a {
+            align-self: flex-start;
+        }
+    }
+
+    .new-shoes {
+        gap: 35px;
+
+        img {
+            width: 300px;
+            height: 252px;
+        }
+    }
+
+
+    .categories {
+        flex-direction: row;
+        gap: 16px;
+        justify-content: center;
+        margin-bottom: 17px;
+        width: 100%;
+
+        a {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: none;
+            aspect-ratio: 724 / 454;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .women-shoes p {
+        right: 45px;
+        bottom: 30px;
+    }
+
+    .man-shoes p {
+        left: 20px;
+        bottom: 30px;
+    }
+
+    .bottom-part {
+        margin-top: 161px;
+        margin-bottom: 161px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        padding: 50px;
+    }
+
+    .footer-block {
+        width: 34%;
+
+        &:last-child {
+            justify-content: flex-end;
+        }
+    }
+
+    .about {
+        width: 100%;
+    }
+}
