@@ -29,9 +29,11 @@ $color-black: #171819;
     align-items: center;
 }
 
+// Ось тут виправив розміри і додав padding
 @mixin button-style {
-    width: 150px;
+    min-width: 150px;
     height: 40px;
+    padding: 0 10px;
     background-color: $color-blue;
     color: $color-white;
     font-weight: 700;
@@ -194,6 +196,7 @@ header {
     }
 }
 
+// Тут прибрав висоту і змінив ширину на  max-width
 .story-cards {
     @include flex-between;
     padding-top: 5vh;
@@ -201,8 +204,7 @@ header {
 
     img {
         display: block;
-        width: 140px;
-        height: 224px;
+        max-width: 140px;
     }
 }
 
@@ -234,6 +236,7 @@ header {
 
     a {
         @include button-style;
+        align-self: flex-start;
     }
 }
 
